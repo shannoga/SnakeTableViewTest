@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F47EFDDC1B14B3B2007F5D47 /* Range+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EFDDB1B14B3B2007F5D47 /* Range+Additions.swift */; };
+		F47EFDDE1B159539007F5D47 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EFDDD1B159539007F5D47 /* Lesson.swift */; };
+		F47EFDE01B15B78C007F5D47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EFDDF1B15B78C007F5D47 /* Colors.swift */; };
+		F47EFDE21B15BB53007F5D47 /* TopAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EFDE11B15BB53007F5D47 /* TopAlignedLabel.swift */; };
 		F4866DB71B0B14AD00D58AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4866DB61B0B14AD00D58AE6 /* AppDelegate.swift */; };
-		F4866DB91B0B14AD00D58AE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4866DB81B0B14AD00D58AE6 /* ViewController.swift */; };
 		F4866DBC1B0B14AD00D58AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4866DBA1B0B14AD00D58AE6 /* Main.storyboard */; };
 		F4866DBE1B0B14AD00D58AE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4866DBD1B0B14AD00D58AE6 /* Images.xcassets */; };
 		F4866DC11B0B14AD00D58AE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4866DBF1B0B14AD00D58AE6 /* LaunchScreen.xib */; };
 		F4866DCD1B0B14AD00D58AE6 /* SnakeTableViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4866DCC1B0B14AD00D58AE6 /* SnakeTableViewTestTests.swift */; };
+		F4866DD71B0B157500D58AE6 /* SnakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4866DD61B0B157500D58AE6 /* SnakeTableViewController.swift */; };
+		F4866E081B0B29F300D58AE6 /* UIView+LoadNIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4866E071B0B29F300D58AE6 /* UIView+LoadNIB.swift */; };
+		F4866E0A1B0B2A4300D58AE6 /* SnakeLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4866E091B0B2A4300D58AE6 /* SnakeLessonView.swift */; };
+		F4866E0E1B0B344F00D58AE6 /* NSLayoutConstraint+EvenDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4866E0D1B0B344F00D58AE6 /* NSLayoutConstraint+EvenDistribution.swift */; };
+		F4866E101B0B389D00D58AE6 /* SnakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4866E0F1B0B389D00D58AE6 /* SnakeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,17 +33,40 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F4866DFD1B0B1E5900D58AE6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F47EFDDB1B14B3B2007F5D47 /* Range+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Additions.swift"; sourceTree = "<group>"; };
+		F47EFDDD1B159539007F5D47 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		F47EFDDF1B15B78C007F5D47 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F47EFDE11B15BB53007F5D47 /* TopAlignedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAlignedLabel.swift; sourceTree = "<group>"; };
 		F4866DB11B0B14AD00D58AE6 /* SnakeTableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakeTableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4866DB51B0B14AD00D58AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4866DB61B0B14AD00D58AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4866DB81B0B14AD00D58AE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4866DBB1B0B14AD00D58AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4866DBD1B0B14AD00D58AE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4866DC01B0B14AD00D58AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4866DC61B0B14AD00D58AE6 /* SnakeTableViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeTableViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4866DCB1B0B14AD00D58AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4866DCC1B0B14AD00D58AE6 /* SnakeTableViewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeTableViewTestTests.swift; sourceTree = "<group>"; };
+		F4866DD61B0B157500D58AE6 /* SnakeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeTableViewController.swift; sourceTree = "<group>"; };
+		F4866DE41B0B1E5800D58AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4866DE51B0B1E5800D58AE6 /* CUstomSnakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUstomSnakeView.h; sourceTree = "<group>"; };
+		F4866E071B0B29F300D58AE6 /* UIView+LoadNIB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+LoadNIB.swift"; path = "../UIView+LoadNIB.swift"; sourceTree = "<group>"; };
+		F4866E091B0B2A4300D58AE6 /* SnakeLessonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeLessonView.swift; sourceTree = "<group>"; };
+		F4866E0D1B0B344F00D58AE6 /* NSLayoutConstraint+EvenDistribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+EvenDistribution.swift"; path = "../NSLayoutConstraint+EvenDistribution.swift"; sourceTree = "<group>"; };
+		F4866E0F1B0B389D00D58AE6 /* SnakeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +92,7 @@
 			children = (
 				F4866DB31B0B14AD00D58AE6 /* SnakeTableViewTest */,
 				F4866DC91B0B14AD00D58AE6 /* SnakeTableViewTestTests */,
+				F4866DE21B0B1E5800D58AE6 /* CUstomSnakeView */,
 				F4866DB21B0B14AD00D58AE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,9 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				F4866DB61B0B14AD00D58AE6 /* AppDelegate.swift */,
-				F4866DB81B0B14AD00D58AE6 /* ViewController.swift */,
-				F4866DBA1B0B14AD00D58AE6 /* Main.storyboard */,
+				F47EFDDD1B159539007F5D47 /* Lesson.swift */,
+				F4866DD61B0B157500D58AE6 /* SnakeTableViewController.swift */,
+				F4866E0F1B0B389D00D58AE6 /* SnakeTableViewCell.swift */,
+				F4866E091B0B2A4300D58AE6 /* SnakeLessonView.swift */,
+				F4866E0D1B0B344F00D58AE6 /* NSLayoutConstraint+EvenDistribution.swift */,
+				F47EFDE11B15BB53007F5D47 /* TopAlignedLabel.swift */,
+				F4866E071B0B29F300D58AE6 /* UIView+LoadNIB.swift */,
+				F47EFDDB1B14B3B2007F5D47 /* Range+Additions.swift */,
+				F47EFDDF1B15B78C007F5D47 /* Colors.swift */,
 				F4866DBD1B0B14AD00D58AE6 /* Images.xcassets */,
+				F4866DBA1B0B14AD00D58AE6 /* Main.storyboard */,
 				F4866DBF1B0B14AD00D58AE6 /* LaunchScreen.xib */,
 				F4866DB41B0B14AD00D58AE6 /* Supporting Files */,
 			);
@@ -112,6 +152,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F4866DE21B0B1E5800D58AE6 /* CUstomSnakeView */ = {
+			isa = PBXGroup;
+			children = (
+				F4866DE51B0B1E5800D58AE6 /* CUstomSnakeView.h */,
+				F4866DE31B0B1E5800D58AE6 /* Supporting Files */,
+			);
+			path = CUstomSnakeView;
+			sourceTree = "<group>";
+		};
+		F4866DE31B0B1E5800D58AE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4866DE41B0B1E5800D58AE6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +179,7 @@
 				F4866DAD1B0B14AD00D58AE6 /* Sources */,
 				F4866DAE1B0B14AD00D58AE6 /* Frameworks */,
 				F4866DAF1B0B14AD00D58AE6 /* Resources */,
+				F4866DFD1B0B1E5900D58AE6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +219,7 @@
 				TargetAttributes = {
 					F4866DB01B0B14AD00D58AE6 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = XG87YXJ457;
 					};
 					F4866DC51B0B14AD00D58AE6 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -212,7 +271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4866DB91B0B14AD00D58AE6 /* ViewController.swift in Sources */,
+				F4866DD71B0B157500D58AE6 /* SnakeTableViewController.swift in Sources */,
+				F47EFDE21B15BB53007F5D47 /* TopAlignedLabel.swift in Sources */,
+				F47EFDE01B15B78C007F5D47 /* Colors.swift in Sources */,
+				F4866E0A1B0B2A4300D58AE6 /* SnakeLessonView.swift in Sources */,
+				F4866E0E1B0B344F00D58AE6 /* NSLayoutConstraint+EvenDistribution.swift in Sources */,
+				F47EFDDE1B159539007F5D47 /* Lesson.swift in Sources */,
+				F47EFDDC1B14B3B2007F5D47 /* Range+Additions.swift in Sources */,
+				F4866E081B0B29F300D58AE6 /* UIView+LoadNIB.swift in Sources */,
+				F4866E101B0B389D00D58AE6 /* SnakeTableViewCell.swift in Sources */,
 				F4866DB71B0B14AD00D58AE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +409,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SnakeTableViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +422,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SnakeTableViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +484,7 @@
 				F4866DD21B0B14AD00D58AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4866DD31B0B14AD00D58AE6 /* Build configuration list for PBXNativeTarget "SnakeTableViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +493,7 @@
 				F4866DD51B0B14AD00D58AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
