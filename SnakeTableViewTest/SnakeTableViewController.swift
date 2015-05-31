@@ -50,7 +50,7 @@ class SnakeTableViewController: UITableViewController {
       
         
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-            self.tableView.rowHeight = 180
+            self.tableView.rowHeight = 240
             maxLessonsInRow = 3
         } else {
             self.tableView.rowHeight = 180

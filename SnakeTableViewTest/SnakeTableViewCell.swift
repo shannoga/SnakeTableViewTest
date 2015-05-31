@@ -39,9 +39,12 @@ class SnakeTableViewCell: UITableViewCell {
     var centerView = UIView()
     
     var lessonSquereWidth:CGFloat  {
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+            return 86
+        }
         let maxLessonsinRow = isEvenRow ? lessonInRow + 1 : lessonInRow
         let width = ((UIScreen.mainScreen().bounds.width - padding) / CGFloat(maxLessonsinRow)) * 0.70
-        return 84//((UIScreen.mainScreen().bounds.width - padding) / CGFloat(maxLessonsinRow)) * 0.70
+        return ((UIScreen.mainScreen().bounds.width - padding) / CGFloat(maxLessonsinRow)) * 0.70
     }
     
  
@@ -350,7 +353,6 @@ class SnakeTableViewCell: UITableViewCell {
         
         if isEvenRow {
             CGContextMoveToPoint(ctx, snakeInset, 0) //starting point
-            CGContextAddLineToPoint(ctx, snakeInset, h/4) //curve starting point
             CGContextAddArcToPoint(ctx, snakeInset, h/2, snakeInset*3, h/2, h/4)
             CGContextAddLineToPoint(ctx, snakeInset*3, h/2)
             CGContextMoveToPoint(ctx, snakeInset*3, h/2)
@@ -358,7 +360,6 @@ class SnakeTableViewCell: UITableViewCell {
 
         } else {
             CGContextMoveToPoint(ctx, w-snakeInset, 0) //starting point
-            CGContextAddLineToPoint(ctx, w-snakeInset, h/4) //curve starting point            
             CGContextAddArcToPoint(ctx, w-snakeInset, h/2, w-snakeInset*3, h/2, h/4)
             CGContextAddLineToPoint(ctx, w-snakeInset*3, h/2)
             CGContextMoveToPoint(ctx, w-snakeInset*3, h/2)
@@ -407,12 +408,10 @@ class SnakeTableViewCell: UITableViewCell {
         CGContextMoveToPoint(ctx, currentLinePoint.x, currentLinePoint.y)
         
         if isEvenRow {
-            CGContextAddLineToPoint(ctx, w-snakeInset*3, h/2) //curve starting point
             CGContextAddArcToPoint(ctx, w-snakeInset, h/2, w-snakeInset, h, h/4)
             CGContextAddLineToPoint(ctx, w-snakeInset, h)
             CGContextMoveToPoint(ctx, w-snakeInset, h)
         } else {
-            CGContextAddLineToPoint(ctx, snakeInset*3, h/2) //curve starting point
             CGContextAddArcToPoint(ctx, snakeInset, h/2, snakeInset, h, h/4)
             CGContextAddLineToPoint(ctx, snakeInset, h)
             CGContextMoveToPoint(ctx, snakeInset, h)
@@ -435,8 +434,8 @@ class SnakeTableViewCell: UITableViewCell {
         UIView.animateWithDuration(animated ? 0.6 : 0.0, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 6.0, options: nil, animations: { () -> Void in
             if filtered
             {
-                var scale = CGAffineTransformMakeScale(0.5, 0.5)
-                var move = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, -30)
+                var scale = CGAffineTransformMakeScale(0.3, 0.3)
+                var move = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, -lessonView.frame.size.height * 0.55)
                 var transform = CGAffineTransformConcat(scale, move)
                 label.transform = transform
                 lessonView.transform = scale
